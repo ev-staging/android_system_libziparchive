@@ -90,6 +90,7 @@ cc_library {
     host_supported: true,
     vendor_available: true,
     recovery_available: true,
+    vendor_ramdisk_available: true,
     native_bridge_supported: true,
     vndk: {
         enabled: true,
@@ -114,8 +115,8 @@ cc_library {
 
     apex_available: [
         "//apex_available:platform",
+        "com.android.art",
         "com.android.art.debug",
-        "com.android.art.release",
     ],
 }
 
